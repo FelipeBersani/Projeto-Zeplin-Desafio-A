@@ -1,0 +1,6 @@
+ /* DUVIDAS:
+ 1-Porque na linha 25 do css eu não consegui usar relative? para deixar o menu em cima alinhado com o tamanho daquele setor da página, e não acima da página.
+ 2-Quando usar align-item:center; margin:0 auto; vertical aligment=top; 
+ 3-As fontes do projeto no Zeplin e no projeto são iguais mas com resultado diferente
+
+ */
