@@ -1,0 +1,689 @@
+ /* DUVIDAS:
+ 1-Porque na linha 33 não consegui usar relative? para deixar o menu em cima alinhado com o tamanho daquele setor da página, e não acima da página.
+
+
+ */
+
+
+
+/*CABEÇALHO*/
+body{
+	margin-left:150px;
+	border: solid #000000;
+	width: 1367px;
+}
+
+.cabecalho{
+	height: 116px;
+	width: 1366px;
+	background-color: #ffffff;
+}
+
+.cabecalho .logo{
+	display: inline-block;
+	height: 100px;
+	width: 127.9px;
+	margin: 8px 140px 8px 121px;
+}
+
+.cabecalho .menuInfo{
+	width: 338px;
+	height: 15px;
+	display: inline-block;
+	position: absolute; /*Porque não pode ser relative?*/
+	top: 16px;
+	left: 907px /*66.4%;*/
+}
+
+.cabecalho .menuInfo ul li{
+	display: inline;
+	font-family: Poppins;
+	font-size: 11px;
+	color: #8d8d8d;
+	font-weight: normal;
+	line-height: 15px;
+	letter-spacing: 1px; 
+}
+
+.cabecalho .menuInfo .segunda::before{
+	content: " | ";
+}
+
+.cabecalho .menuInfo .segunda::after{
+	content: " | ";
+}
+
+.cabecalho .menuOpcoes{
+	width: 741px;
+	height: 21px;
+	display: inline-block;
+	position: relative;
+	bottom: 29px;
+}
+
+.cabecalho .menuOpcoes ul li{
+	display: inline;
+	font-family: Poppins;
+	font-size: 16px;
+	padding-right: 23px;
+}
+
+
+.cabecalho .menuOpcoes ul li:last-child{
+	padding-right: 0px;
+}
+
+/*Intro Empresa*/
+.introEmpresa{
+	width: 1366px;
+	height: 652px;
+	background: url("../img/fundo.jpg") bottom no-repeat;
+	opacity: 1;
+}
+
+.introEmpresa h1{
+	font-family: Poppins;
+	font-size: 81px;
+	font-weight: 600;
+	line-height: 0.75;
+	font-stretch: normal;
+	color: #292929;
+ 	text-shadow: 0 10px 16px rgba(0, 0, 0, 0.09);
+ 	position: relative;
+ 	top: 250px;
+	text-align: center;
+}
+
+.introEmpresa h2{
+	font-family: Poppins;
+	font-size: 52px;
+	font-weight: 600;
+	line-height: 1.17;
+	color: #292929;
+ 	text-shadow: 0 10px 16px rgba(0, 0, 0, 0.09);
+	position: relative;
+ 	top: 260px;
+	text-align: center;	
+}
+
+
+
+/*COMPLEMENTO EMPRESA*/
+.complementoEmpresa{
+	width: 1366px;
+	height: 541px;
+	display: inline-block;
+}
+
+.complementoEmpresa .primeiraFrase{
+	width: 729px;
+	height: 142px;
+	padding: 98px 0 0 121px;
+	font-family: Poppins;
+	font-size: 21px;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.42;
+	letter-spacing: -0.2px;
+	text-align: left;
+	color: #292929;
+}
+.complementoEmpresa .primeiraFrase span{
+	color: #0872ba;
+}
+
+.complementoEmpresa .segundaFrase{
+	width: 701px;
+	height: 170px;
+	padding-left: 121px;
+	font-family: Poppins;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 1.5;
+	text-align: left;
+	color: #636363;
+}
+
+.complementoEmpresa .fundoMoca{
+	width: 592.5px;
+	height: 592.3px;
+	position: relative;
+	float: right;
+	bottom: 460px;
+	right: 0;
+	z-index: -1;
+}
+
+.complementoEmpresa .mocaFeliz{
+	width: 238px;
+	height: 490px;
+	position: relative;
+	bottom: 358px;
+    left: 850px;
+	object-fit: contain;
+}
+
+
+/*AREA CONSULTA*/
+.areaConsulta{
+	width: 1366px;
+	height: 316px;
+	background: url("../img/faltou0.png") no-repeat center;
+	opacity: 1;
+}
+
+.areaConsulta .azulado{
+	width: 1367px;
+	height: 316px;
+	background: rgba(82, 156, 206, 0.8);
+}
+
+.areaConsulta p{
+	width: 664px;
+	height: 59px;
+	font-size: 19px;
+	font-family: Poppins;
+	line-height: 1.74;
+	padding-left: 386px;
+	padding-top: 76px;
+	text-align: center;
+	color: #FFFFFF;
+}
+
+.areaConsulta .azulado .botao{
+	width: 288px;
+	height: 56px;
+	color: #FFFFFF;
+	font-family: Poppins;
+	font-size: 24px;
+	line-height: 1.43;
+	background-color: rgb(246, 147, 37);
+	text-align: center;
+	margin-left: 573px;
+	margin-top: 48px;
+}
+
+
+/*AREA FORNECIMENTO*/
+.areaFornecimento{
+	width: 1366px;
+	height: 516px;
+}
+
+.areaFornecimento .titulosFornecimento{
+	width: 760px;
+	height: 78px;
+	padding-top: 66px;
+	padding-left: 303.5px
+}
+
+.areaFornecimento .titulosFornecimento h1, h2{
+	color: #292929;
+	font-size: 36px;
+	font-family: Poppins;
+	font-weight: normal;
+	line-height: 34px;
+	letter-spacing: 1.3px;
+	text-align: center;
+}
+
+.areaFornecimento .titulosFornecimento h2{
+	font-size: 20px;
+	padding-top: 15px;
+}
+
+.areaFornecimento .cards{
+	text-align: center;
+	margin-top: 100px;
+}
+
+.areaFornecimento .cards .card{
+	width: 265px;
+	height: 220px;
+	margin-left: 10px;
+	margin-right: 10px;
+	padding-top: 20px;
+	display: inline-block;
+	text-align: center;	
+}
+
+.areaFornecimento .cards .card img{
+	text-align: center;
+	width: 43px;
+	height: 48px;
+
+}
+
+.areaFornecimento .cards .card h2{
+	font-size: 14px;
+	color: blue; /*#143763*/
+	font-family: Poppins;
+	line-height: normal;
+	font-weight: normal;
+	text-align: center;
+	padding-top: 30px;
+}
+
+.areaFornecimento .cards .card h2::after{
+	content: '';
+	display: block;
+	margin-top: 15px;
+	margin-left: 40.35%;
+	width: 51px;
+  	height: 0;
+ 	border: solid 2px #f79421;
+}
+
+.areaFornecimento .cards .card h3{
+	font-size: 13px;
+	color: #292929;
+	font-family: Poppins;
+	line-height: normal;
+	font-weight: normal;
+	text-align: center;
+	padding-top: 20px;
+}
+
+
+/*AREA CLIENTES*/
+.areaClientes{
+	width: 1366px;
+	height: 443px;
+	background: url("../img/faltou.jpg");
+}
+
+.areaClientes p{
+	margin-left: 396px;
+	padding-top: 97px;
+	padding-bottom: 75px;
+	width: 574px;
+	height: 84px;
+	font-size: 30px;
+	font-family: Poppins;
+	font-weight: 300;
+	line-height: 1.47;
+	color: purple;
+	text-align: center;
+}
+
+.areaClientes .cards{
+	text-align: center;
+	
+}
+
+.areaClientes .cards .card{
+	display: inline-block;
+	padding:0 75px;
+}
+
+.areaClientes .cards .card h1{
+	font-family: Poppins;
+	font-size: 59px;
+	font-weight: 600;
+	line-height: 30px;
+	text-align: center;
+	padding-bottom: 25px;
+}
+
+.areaClientes .cards .card h2{
+	font-family: Poppins;
+	font-size: 20px;
+	font-weight: 500;
+	line-height: 16px;
+	text-align: center;
+}
+
+/* SEGUNDA PARTE AREA CLIENTES*/
+.clientesCard{
+	width: 1366px;
+	height: 458px;
+}
+
+.clientesCard .clienteCard1{
+	display: inline-block;
+	width: 49.8%;
+	height: 100%;
+	vertical-align: top;
+	background: url("../img/FALTOU1.jpg") no-repeat center;
+}
+
+.clientesCard .clienteCard1 .azulado{
+	background: rgba(82, 156, 206, 0.8);
+	width: 683px;
+	height: 458px;
+}
+
+.clientesCard .clienteCard2{
+	display: inline-block;
+	width: 49.8%;
+	height: 100%;
+}
+
+.clientesCard .clienteCard1 img{
+	width: 126px;
+	height: 126px;
+	opacity: 0;
+	padding-left: 40%;
+	padding-top: 9%;
+}
+
+.clientesCard .clienteCard2 img{
+	width: 126px;
+	height: 126px;
+	padding-left: 40%;
+	padding-top: 9%;
+}
+
+.clientesCard .clienteCard1 p{
+	color: #FFFFFF;
+	width: 450px;
+	height: 39px;
+	margin-left: 15%;
+	margin-top: 30px;
+	font-family: Poppins;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 1.43;
+	letter-spacing: 0.5px;
+	text-align: center;
+}
+
+.clientesCard .clienteCard2 p{
+	color: rgb(82, 156, 206);
+	width: 450px;
+	height: 39px;
+	margin-left: 15%;
+	margin-top: 30px;
+	font-family: Poppins;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 1.43;
+	letter-spacing: 0.5px;
+	text-align: center;
+}
+
+.clientesCard .clienteCard1 h2{
+	color: #FFFFFF;
+	width: 120px;
+	height: 60px;
+	font-size: 18px;
+	font-family: Poppins;
+	line-height: 1.43;
+	text-decoration: underline;
+	text-align: center;
+	margin-left: 40%;
+	margin-top: 30px;
+}
+
+.clientesCard .clienteCard2 h2{
+	color: rgb(82, 156, 206);
+	width: 120px;
+	height: 60px;
+	font-size: 18px;
+	font-family: Poppins;
+	line-height: 1.43;
+	text-decoration: underline;
+	text-align: center;
+	margin-left: 40%;
+	margin-top: 30px;
+}
+
+.clientesCard .clienteCard1 h1{
+	color: #FFFFFF;
+	width: 250px;
+	height: 40px;
+	font-size: 26px;
+	font-family: Poppins;
+	line-height: 29px;
+	text-align: center;
+	margin-left: 25px;
+}
+
+.clientesCard .clienteCard2 h1{
+	color: #292929;
+	width: 250px;
+	height: 40px;
+	font-size: 26px;
+	font-family: Poppins;
+	line-height: 29px;
+	text-align: center;
+	margin-left: 25px;
+}
+
+.clientesCard .clienteCard1 h3{
+	color: #FFFFFF;
+	width: 150px;
+	height: 40px;
+	font-size: 14px;
+	font-family: Poppins;
+	line-height: 1.43;
+	text-align: center;
+	margin-left: 43px;
+}
+
+.clientesCard .clienteCard2 h3{
+	color: #292929;
+	width: 160px;
+	height: 40px;
+	font-size: 14px;
+	font-family: Poppins;
+	line-height: 1.43;
+	text-align: center;
+	margin-left: 15px;
+}
+
+
+/*CAROUSEL*/
+.carousel{
+	width: 1366px;
+	height: 524px;
+	background: #363636;
+}
+
+.carousel .titulos{
+	padding-top: 58px;
+}
+
+.carousel .titulos h1{
+	color: #FFFFFF;
+	font-family: Poppins;
+	font-size: 36px;
+	font-weight: normal;
+	line-height: 1.3px;
+	padding-top: 20px;
+	text-align: center;
+}
+
+.carousel .titulos h2{
+	color: #FFFFFF;
+	font-family: Poppins;
+	font-size: 20px;
+	font-weight: normal;
+	line-height: 1.3px;
+	padding-top: 70px;
+	text-align: center;
+}
+
+.carousel .cards{
+	margin-top: 80px;
+	text-align: center;
+}
+
+.carousel .cards li{
+	display: inline-block;
+}
+
+.carousel .botoes{
+	text-align: center;
+}
+
+.carousel .botoes .botao{
+	display: inline-block;
+	width: 14px;
+	height: 14px;
+	background: #FFFFFF;
+	border-radius: 50%;
+	padding: 2px;
+	margin-left: 10px;
+}
+
+
+/*CLIENTES VALIOSOS*/
+.areaClientesValiosos{
+	width: 1336px;
+	height: 421px;
+}
+
+.areaClientesValiosos h1{
+	width: 600px;
+	height: 48px;
+	margin: 0 auto;
+	padding-top: 97px;
+	color: #0872ba;
+	font-family: Poppins;
+	font-size: 36px;
+	line-height: 40px;
+	letter-spacing: 1.3px;
+	text-align: center;
+}
+
+.areaClientesValiosos img{
+	width: 1137px;
+	height: 87px;
+	margin-left: 108px;
+	margin-top: 70px;
+}
+
+
+/*RODAPÉ*/
+.rodape{
+	width: 1366px;
+	height: 413px;
+	background: #303030;
+}
+
+.rodape	.opcoesMenu{
+	width: 1366px;
+	height: 79px;
+	text-align: center;
+}
+
+.rodape	.opcoesMenu::after{
+	content: '';
+	display: block;
+	width: 100%;
+	margin-top: 27px;
+	border: solid 1px #37393a;
+}
+
+.rodape .opcoesMenu ul li{
+	display: inline-block;
+	margin-top: 30px;
+	padding: 0 15px;
+	font-size: 14px;
+	font-family: Poppins;
+	line-height: normal;
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+.rodape .opcoesNegocio{
+	width: 1366px;
+	height: 284px;
+	background: #303030;
+	margin: 0 auto;
+	text-align: center;
+}
+
+
+/* nth child só para treino */
+.rodape .opcoesNegocio ul:first-child{
+	width: 270px;
+	height: 168px;
+	display: inline-block;
+	vertical-align: top;
+	margin-top: 60px;
+	padding-right: 75px;
+}
+
+.rodape .opcoesNegocio ul:nth-child(2){
+	width: 190px;
+	height: 168px;
+	display: inline-block;
+	vertical-align: top;
+	margin-top: 60px;
+	padding-right: 75px;
+}
+
+.rodape .opcoesNegocio ul:nth-child(3){
+	width: 210px;
+	height: 168px;
+	display: inline-block;
+	vertical-align: top;
+	margin-top: 60px;
+	padding-right: 75px;
+}
+
+.rodape .opcoesNegocio ul{
+	width: 270px;
+	height: 168px;
+	display: inline-block;
+	vertical-align: top;
+	margin-top: 60px;
+}
+
+.rodape .opcoesNegocio ul li{
+	text-align: left;
+	font-size: 13px;
+	font-weight: normal;
+	font-family: Poppins;
+	line-height: 25px;
+	color:#FFFFFF;
+}
+
+.rodape .opcoesNegocio ul li:first-child{
+	font-size: 14px;
+	font-weight: bold;
+	font-family: Poppins;
+	line-height: 25px;
+	color:#FFFFFF;
+}
+
+.finalFooter {
+	width: 1366px;
+	height: 50px;
+	background: #2b2b2b;
+}
+
+.finalFooter .footerTitulo{
+	display: inline-block;
+	margin-top: 17px;
+	vertical-align: top;
+}
+
+.finalFooter .footerSociais{
+	display: inline-block;
+}
+
+.finalFooter .footerTitulo h1{
+	width: 700px;
+	height: 25px;
+	color: #FFFFFF;
+	font-size: 14px;
+	font-family: Open Sans;
+	opacity: 0.68;
+	line-height: 25px;
+	margin-left: 120px;
+}
+
+.finalFooter .footerSociais ul{
+	width: 200px;
+	height: 30px;
+	margin-left: 280px;
+	margin-top: 15px;
+}
+.finalFooter .footerSociais ul li{
+	display: inline-block;
+	padding: 0 15px;
+	text-align: center;
+}
