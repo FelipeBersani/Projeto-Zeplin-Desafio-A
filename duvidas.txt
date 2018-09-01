@@ -1,0 +1,11 @@
+﻿ /* 
+https://app.zeplin.io/project/5b6defe6f290b67d6756a404/screen/5b840da65f523208bee6cd87
+
+ DUVIDAS:
+ 1-Porque na linha 25 do css eu não consegui usar relative? para deixar o menu em cima alinhado com o tamanho daquele setor da página, e não acima da página.
+ 2- Parte do layout abriu um "buraco" branco para a próxima section
+ 3- Problema com a fonte (ficou diferente do projeto)
+ 4-Quando usar align-item:center; margin:0 auto; vertical aligment=top; 
+ 5-As fontes do projeto no Zeplin e no projeto são iguais mas com resultado diferente
+
+ */
